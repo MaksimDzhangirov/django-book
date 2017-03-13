@@ -1,5 +1,5 @@
 # Summary
 
 * [Введение](README.md)
-* [First Chapter](chapter1.md)
+* [Пособие по развертыванию приложения на Django. Мотивация](chapter1.md)
 

@@ -1,3 +1,4 @@
-# First Chapter
+# Пособие по развертыванию приложения на Django. Мотивация
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+Здесь описаны причины из-за которых возникла необходимость написания этого пособия.
+

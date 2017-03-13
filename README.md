@@ -1,3 +1,4 @@
-# My Awesome Book
+# Введение
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Данная книга является вольный переводом серий статей, посвященных развертыванию приложений на Django - https://github.com/djstein/modern-django. Переводы новых глав будут появляться по мере появления оригинальных статей.
+

@@ -23,7 +23,7 @@
 * Git: "Система управления версиями \(СУВ\) отслеживающая изменения в файлах на компьютере и координирующая работу над этими файлами между несколькими пользователями" \([источник](https://en.wikipedia.org/wiki/Git)\).
 * GitHub: веб-версия [Git](https://en.wikipedia.org/wiki/Git) или [хранилище с системой управления версиями](https://en.wikipedia.org/wiki/Repository_%28version_control%29) и [сервис для интернет-хостинга](https://en.wikipedia.org/wiki/Internet_hosting_service). Он предоставляет все функции [распределенной системы управления версиями](https://en.wikipedia.org/wiki/Distributed_version_control) и [управления исходным кодом](https://en.wikipedia.org/wiki/Source_code_management) \(SCM\) Git, а также добавляет свои собственные функции. Он обеспечивает [управление доступом](https://en.wikipedia.org/wiki/Access_control) и несколько функций для совместной работы, включая [отслеживание ошибок](https://en.wikipedia.org/wiki/Bug_tracking_system), [запросов на добавление новых функций](https://en.wikipedia.org/wiki/Software_feature), [управление задачами](https://en.wikipedia.org/wiki/Task_management)  и [ведение документации](https://en.wikipedia.org/wiki/Wiki) для каждого проекта \[[3](https://en.wikipedia.org/wiki/GitHub#cite_note-hugeinvestment-3)\]" \([источник](https://en.wikipedia.org/wiki/GitHub)\).
 
-
+Другими используемыми технологиями являются любой, на Ваш выбор эмулятор терминала и текстовый редактор. Я буду использовать [iTerm](https://github.com/gnachman/iTerm2) и [Sublime Text 3](https://www.sublimetext.com/), но Вы можете использовать то, с чем Вам удобно работать.
 
 
 

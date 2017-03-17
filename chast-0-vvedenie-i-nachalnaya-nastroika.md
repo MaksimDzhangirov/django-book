@@ -16,5 +16,7 @@
 
 ## Используемые технологии
 
+* [Python 3](https://docs.python.org/3/): "Python - используемый во многих областях [язык высокого уровня](https://en.wikipedia.org/wiki/High-level_programming_language) [общего назначения](https://en.wikipedia.org/wiki/General-purpose_programming_language), созданный [Гвидо ван Россумом](https://en.wikipedia.org/wiki/Guido_van_Rossum) в 1991 году. Являясь [интерпретируемым языком](https://en.wikipedia.org/wiki/Interpreted_language), Python имеет свою философию проектирования, в которой особое значение уделяется [читаемости кода](https://en.wikipedia.org/wiki/Readability) \(в частности, использование [отступов](https://en.wikipedia.org/wiki/Whitespace_character) для выделения [блоков кода](https://en.wikipedia.org/wiki/Code_block) вместо фигурных скобок или ключевых слов\) и синтаксису, который позволяет программисту реализовывать алгоритмы, используя намного меньшее количество [строк кода](https://en.wikipedia.org/wiki/Source_lines_of_code) по сравнению с такими языками как [С++](https://en.wikipedia.org/wiki/C%2B%2B) или [Java](https://en.wikipedia.org/wiki/Java_%28programming_language%29). Язык предоставляет конструкции, позволяющие писать понятные программы не зависимо от их размера \[[24](https://en.wikipedia.org/wiki/Python_%28programming_language%29#cite_note-AutoNT-7-24)\]". \([источник](https://en.wikipedia.org/wiki/Python_%28programming_language%29)\)
+
 
 

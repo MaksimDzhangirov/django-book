@@ -84,8 +84,20 @@ Collecting virtualenv
   Downloading virtualenv-15.1.0-py2.py3-none-any.whl (1.8MB)
     100% |████████████████████████████████| 1.8MB 696kB/s
 Installing collected packages: virtualenv
-Successfully installed virtualenv-15.1.0 
+Successfully installed virtualenv-15.1.0
 ```
+
+Некоторым пользователям для установки virtualenv необходимо использовать sudo \(возможность запуска команд от имени другого пользователя, в данном случае - от суперпользователя\), как показано ниже:
+
+```
+# Команда
+sudo pip install vitualenv
+# Ожидаемый результат
+Password:
+...
+```
+
+### 4. Устанавливаем git
 
 
 

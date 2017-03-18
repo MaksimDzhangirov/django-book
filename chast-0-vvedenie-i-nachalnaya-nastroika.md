@@ -63,7 +63,29 @@ pip 9.0.1 from /Library/Fram ... (python 3.6)
 
 ### 3. Устанавливаем Virtualenv
 
+**Дополнение от 23/02/2017:** Дополнить эту часть предложил пользователь Reddit [Godof](https://www.reddit.com/user/Godof) в [этом комментарии](https://www.reddit.com/r/django/comments/5vlyx5/modern_django_part_0_introduction_and_initial/de3avsz/). Он указал, что скрипт под названием `'venv'` входит в состав Python 3. Этот скрипт позволяет создать виртуальное окружение, однако он не содержит всех функций, предоставляемых инструментом `virtualenv`.  Скрипт вызывается следующим образом:
 
+```
+# Команда
+python3 -m venv <venv_name>
+```
+
+Проведя некоторые исследования, я считаю, что данный скрипт не является глобальным стандартом, поэтому в дальнейшем рассматривается установка/использование virtualenv.
+
+---
+
+После установки pip, нужно установить `virtualenv`. Запустите приведенную ниже команду:
+
+```
+# Команда
+pip3 install virtualenv
+# Ожидаемый результат
+Collecting virtualenv
+  Downloading virtualenv-15.1.0-py2.py3-none-any.whl (1.8MB)
+    100% |████████████████████████████████| 1.8MB 696kB/s
+Installing collected packages: virtualenv
+Successfully installed virtualenv-15.1.0 
+```
 
 
 

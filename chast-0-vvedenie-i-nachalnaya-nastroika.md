@@ -114,9 +114,7 @@ git version 2.10.1
 
 Мы будем работать с GitHub через веб-интерфейс , тем не менее новый репозиторий можно легко создать из терминала. [Для этого и чтобы настроить другие , связанные с GitHub SSH инструменты, воспользуйтесь официальной документацией](https://help.github.com/articles/connecting-to-github-with-ssh/).
 
-Для начала войдите в [GitHub](https://www.github.com/) \(или [создайте там аккаунт](https://github.com/join)\) и [создайте новый репозиторий](https://github.com/new).![](/images/part0/create-repository.png)
-
-                                                      Так выглядит форма при создании нового репозитория на GitHub
+Для начала войдите в [GitHub](https://www.github.com/) \(или [создайте там аккаунт](https://github.com/join)\) и [создайте новый репозиторий](https://github.com/new).![](/images/part0/create-repository.png)Так выглядит форма при создании нового репозитория на GitHub
 
 Мы заполним следующие поля:
 

@@ -266,5 +266,23 @@ nothing added to commit but untracked files present (use "git add" to track)
 git add config/ manage.py requirements.txt
 ```
 
+Опять воспользуйтесь командой `git status`, чтобы проверить какие файлы теперь отслеживаются и изменения в которых должны быть зафиксированы.
+
+```
+# Команда
+git status
+# Ожидаемый результат
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+ new file:   config/__init__.py
+ new file:   config/settings.py
+ new file:   config/urls.py
+ new file:   config/wsgi.py
+ new file:   manage.py
+ new file:   requirements.txt
+```
+
 
 

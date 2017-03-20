@@ -284,5 +284,54 @@ Changes to be committed:
  new file:   requirements.txt
 ```
 
+Самое время зафиксировать изменения в этих файлах. При фиксировании изменений важно добавить сообщение о сделанных изменениях. Флаг `-m` позволяет добавить сообщение, используя команду `git commit`.
+
+```
+# Команда
+git commit -m "Initial Project Structure"
+# Ожидаемый результат
+[master <commit hash>] Initial Project Structure
+ 6 files changed, 180 insertions(+)
+ create mode 100644 config/__init__.py
+ create mode 100644 config/settings.py
+ create mode 100644 config/urls.py
+ create mode 100644 config/wsgi.py
+ create mode 100644 manage.py
+ create mode 100644 requirements.txt
+```
+
+В последний раз выполните команду git status, чтобы убедиться, что Ваша локальная ветка находится впереди ветки master удаленного репозитория.
+
+```
+# Команда
+git status
+# Ожидаемый результат
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+```
+
+Наконец отправьте изменения в Ваш GitHub репозиторий!
+
+**Замечание:** Возможно Вам придется ввести пароль к Вашему GitHub аккаунту, если Вы не настраивали SSH ключи и клонировали через SSH URL как описано выше.
+
+```
+# Команда
+git push
+# Ожидаемый результат
+Counting objects: 10, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (10/10), 2.82 KiB | 0 bytes/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To https://github.com/<Ваше_имя_пользователя_github>/modern-django.git
+   <hash>..<hash>  master -> master
+```
+
+Поздравляем! Исходный проект Django был создан и отправлен в удаленный репозиторий. Это первый важный шаг при разработке современного приложения на Django.
+
+### Выводы
+
 
 

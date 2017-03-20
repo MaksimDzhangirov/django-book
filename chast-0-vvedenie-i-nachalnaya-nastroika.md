@@ -241,5 +241,30 @@ drwxr-xr-x  7 <user>  staff   238 Feb 22 00:30 venv
 
 ### 8. Фиксация изменений \(commiting\) и отправка их на удаленный сервер \(pushing\)
 
+Теперь, когда исходный проект создан, пора отправить его в удаленный GitHub репозиторий.
+
+Сначала проверьте какие файлы изменились по сравнению с файлами, находящимися в удаленном репозитории с помощью команды `git status`:
+
+```
+# Команда
+git status
+# Ожидаемый результат
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+ config/
+ manage.py
+ requirements.txt
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+Добавьте каталог `config`, файлы `manage.py` и `requirements.txt` к отслеживаемым файлам:
+
+```
+# Команда
+git add config/ manage.py requirements.txt
+```
+
 
 

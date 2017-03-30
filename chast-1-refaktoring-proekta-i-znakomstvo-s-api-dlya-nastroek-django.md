@@ -426,7 +426,7 @@ Quit the server with CONTROL-C.
 
 Мы успешно настроили наш проект и готовы начинать локальную разработку!
 
-[Здесь хранится исходный код на GitHub для этого раздела.](https://github.com/djstein/modern-django/tree/master/Part%201:%20Project%C2%A0Refactor)
+[Здесь хранится исходный код на GitHub для этого раздела.](https://github.com/djstein/modern-django/tree/master/Part 1: Project Refactor)
 
 Структура приложения сейчас должна выглядеть следующим образом:
 
@@ -473,5 +473,9 @@ modern-django
 
 Дилан Штейн.
 
-Благодарю Джерри Ву \([Jenny Vu](https://medium.com/@jennyktvu?source=post_page)\) и Карла Хилтбруннера \([Carl Hiltbrunner](https://medium.com/@subzidion?source=post_page)\).
+Благодарю Дженни Ву \([Jenny Vu](https://medium.com/@jennyktvu?source=post_page)\) и Карла Хилтбруннера \([Carl Hiltbrunner](https://medium.com/@subzidion?source=post_page)\). 
+
+> Примечание переводчика. Эти люди помогли автору своими советами перед тем как была опубликована эта часть.
+
+
 

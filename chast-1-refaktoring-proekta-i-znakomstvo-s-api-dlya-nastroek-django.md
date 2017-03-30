@@ -422,5 +422,56 @@ Quit the server with CONTROL-C.
 
 ---
 
+## Выводы
 
+Мы успешно настроили наш проект и готовы начинать локальную разработку!
+
+[Здесь хранится исходный код на GitHub для этого раздела.](https://github.com/djstein/modern-django/tree/master/Part%201:%20Project%C2%A0Refactor)
+
+Структура приложения сейчас должна выглядеть следующим образом:
+
+```
+modern-django
+├── LICENSE
+├── README.md
+├── config
+│   ├── __init__.py
+│   ├── __pycache__
+│   ├── settings
+│   │   ├── __pycache__
+│   │   ├── base.py
+│   │   ├── local.py
+│   │   ├── production.py
+│   │   └── test.py
+│   ├── urls.py
+│   └── wsgi.py
+├── db.sqlite3
+├── env.example
+├── manage.py
+└── requirements
+    ├── base.txt
+    ├── local.txt
+    ├── production.txt
+    └── test.txt
+```
+
+Мы изменили структуру нашего окружения и теперь готовы добавлять в него приложения. Дальнейшие изменения структуры будут вносится по ходу разработки и развертывания с помощью [Docker](https://en.wikipedia.org/wiki/Docker_%28software%29).
+
+В следующий раз мы обсудим миграции, аутентификацию пользователей с помощью [AllAuth](https://github.com/pennersr/django-allauth) \(и некоторые другие приёмы\) и если останется место введение в [Django REST фреймворк](http://www.django-rest-framework.org/).
+
+---
+
+![](/images/part1/djangoun.png)
+
+На самом деле я думал, что смогу удержаться и не пошучу про фильм Django Unchained \(Джанго Освобожденный\).
+
+Встретимся в следующий раз! В этот раз было действительно много новой информации. Прошу прощения у тех, кому будет тяжело, но Вам действительно нужно знать это. **Как говорится с пивом пойдет**. Увидимся в части 2 позднее на этой неделе.
+
+Как всегда отзывы, советы, приёмы и критика приветствуются в комментариях или по электронной почте.
+
+С наилучшими пожеланиями и спасибо,
+
+Дилан Штейн.
+
+Благодарю Джерри Ву \([Jenny Vu](https://medium.com/@jennyktvu?source=post_page)\) и Карла Хилтбруннера \([Carl Hiltbrunner](https://medium.com/@subzidion?source=post_page)\).
 

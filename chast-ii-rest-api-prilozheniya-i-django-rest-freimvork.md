@@ -1,27 +1,25 @@
-# Часть II: REST API, приложения и Django REST фреймворк
+# Часть 2: REST API, приложения и Django REST фреймворк
 
 ## Введение
 
 Предыдущие части пособия, касающиеся технической разработки, можно найти здесь:
 
-* Часть 0: 
-* Часть 1:
+* [Часть 0: Введение и начальная настройка](/chast-0-vvedenie-i-nachalnaya-nastroika.md)
+* [Часть 1: Рефакторинг проекта и знакомство с API для настроек Django](/chast-1-refaktoring-proekta-i-znakomstvo-s-api-dlya-nastroek-django.md)
 
 После того как Вы прочитали эти части и выполнили действия, указанные в них, у нас есть прочный фундамент для нашего приложения, готовый для дальнейших модификаций. Эта часть начинается с краткого курса по HTTP. Затем поясняется понятие "приложения" в Django. Наконец, большая часть этого раздела посвящена краткому введению в Django REST фреймворк.
 
 После пояснения основных понятий, мы рассмотрим некоторые ключевые функции Django REST фреймворка. Они будут использоваться при создания API приложения для работы со встроенной моделью `User`. Одновременно с  этим мы научимся взаимодействовать с REST API в терминале.
 
-## Технологии
+## Используемые технологии
 
 В этом разделе рассматриваются технологии, связанные с Django приложениями, основные HTTP и REST стандарты, Django REST фреймворк и программы, используемые при работе с API в терминале.
 
 * [Django приложения](https://docs.djangoproject.com/en/1.11/ref/applications/): "Под термином "приложение" понимается Python пакет, предоставляющий некоторый набор функций. Приложения могут повторно использоваться в различных проектах" \([источник](https://docs.djangoproject.com/en/1.11/ref/applications/)\). Django проект состоит из множества Приложений, которые можно повторно использовать в других проектах. Более подробно Djangj приложения мы рассмотрим ниже.
-* [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol). Сокращение от Hypertext Transfer Protocol \(протокол передачи гипертекста\). HTTP является протоколом передачи данных по схеме "[запрос-ответ](https://en.wikipedia.org/wiki/Request%E2%80%93response)" в [модели клиент-сервер](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) \([источник](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)\).
+* [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol). Сокращение от Hypertext Transfer Protocol \(протокол передачи гипертекста\). HTTP является протоколом передачи данных по схеме "[запрос-ответ](https://en.wikipedia.org/wiki/Request–response)" в [модели клиент-сервер](https://en.wikipedia.org/wiki/Client–server_model) \([источник](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)\).
 * [HTTP методы/действия](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods): Методы, как определено в HTTP стандартах, "указывают на желаемую операцию, которая должна быть выполнена над ресурсом" \([источник](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods)\). Основными методами являются GET и POST. Существуют и другие, например, DELETE, PUT, PATCH и т. д. Конкретный URL-адрес может выполнять различные функции в зависимости от метода, переданного ему в HTTP-запросе.
 * [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer). Сокращение от Representational State Transfer \(репрезентативная передача состояния\). "Веб-службы, совместимые с REST, позволяют запрашивающим системам получать доступ к текстовым представлениям [веб-ресурсов](https://en.wikipedia.org/wiki/Web_resource) и манипулировать ими, используя единый и предопределенный набор операций, не зависящих от предыдущего состояния ресурсов" \([источник](https://en.wikipedia.org/wiki/Representational_state_transfer)\). Это означает, что REST приложения имеют стандартный набор/структуру HTTP ресурсов, предоставляющих данные клиентам с сервера, в зависимости от используемого HTTP метода.
 * Django REST фреймворк: "Django REST фреймворк - это мощный и гибкий инструментарий для создания Web API" \([источник](http://www.django-rest-framework.org/)\). Мы будем использовать приложение Django REST фреймворк, чтобы облегчить интегрирование REST API в существующий функционал Django!
-
-
 
 
 

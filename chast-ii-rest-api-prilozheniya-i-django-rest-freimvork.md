@@ -180,14 +180,14 @@ app
 ```
 # Команды
 mkdir project
-cd project/ 
+cd project/
 ```
 
 Затем мы используем команду `startapp` для создания приложения с названием `api` внутри этого каталога.
 
 ```
 # Команда
-python ../manage.py startapp api 
+python ../manage.py startapp api
 ```
 
 Наш каталог `api` должен выглядеть следующим образом:
@@ -219,6 +219,31 @@ from django.conf.urls import url, include
 urlpatterns = [
 ]
 ```
+
+Теперь мы должны сообщить `config` о нашем новом приложении. Для этого добавим необходимые изменения в `config/settings/base.py` и `config/urls.py.` В `base.py` добавьте приложение `api` в `LOCAL_APPS`.
+
+```
+LOCAL_APPS = (
+    'project.api',
+)
+```
+
+Оно должно подхватиться автоматически благодаря `api.app.AppConfig`!
+
+Теперь мы можем добавить URL-адреса из приложения `api` к основным URL-адресам из файла `config/urls.py`. URL-адреса приложения `api` будут доступны из корня сайта, поскольку в конце концов мы создаём API сервер.
+
+Добавьте следующие изменения в `config/urls.py`:
+
+```
+from django.conf.urls import include, url
+from django.contrib import admin
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^', include('project.api.urls')),
+]
+```
+
+Мы импортировали `django.conf.urls.include` и использовали его для добавления файла `api/urls.py`.
 
 
 

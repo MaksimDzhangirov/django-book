@@ -308,3 +308,39 @@ REST_FRAMEWORK = {
 
 Существуют различные типы сериализаторов, но сейчас мы рассмотрим [HyperlinkedModelSerializers](http://www.django-rest-framework.org/api-guide/serializers/#hyperlinkedmodelserializer). Чтобы понять как их использовать, давайте сначала рассмотрим ModelSerializers:
 
+> Класс **`ModelSerializer` **отличается от обычного класса **`Serializer`** тем, что:
+>
+> Он автоматически генерирует набор полей вместо Вас, используя модель.
+>
+> Он автоматически генерирует валидаторы для сериализатора, например, unique\_together валидаторы.
+>
+> Он содержит простые используемые по умолчанию реализации методов `.create()` и `.update()`.
+
+HyperlinkedModelSerializers создают на основе ModelSerializers, используя URL-адрес вместо значений первичного ключа для определения отношений. Таким образом, при получении данных из сериализатора вы получите поле `url` вместо `pk`.
+
+Всё это можно сделать вручную, однако нам стоит использовать HyperlinkedModelSerializer в 9 случаях из 10 при работе с моделью. В более сложных ситуациях возможно нам придется создавать весь `Serializer` вручную.
+
+[Всю документацию по DRF сериализаторам можно найти здесь.](http://www.django-rest-framework.org/api-guide/serializers/)
+
+Теперь мы создадим наш сериализатор для модели `User`. Сначала создайте `serializers.py`:
+
+```
+# Команда
+touch project/api/serializers.py
+```
+
+В файл `project/api/serializers.py` мы добавим класс `UserSerializer`:
+
+```
+from django.contrib.auth.models import User
+from rest_framework import serializers
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ('url', 'username', 'email', 'groups')
+```
+
+Мы импортировали модель User и создали HyperlinkedModelSerializer, который извлечёт данные, связанные с моделью, а также URL-адрес экземпляра модели.
+
+Этот URL-адрес позволит перейти на страницу конкретного пользователя с его данными. Для таблиц, в которых пользователь является внешним ключом, в качестве значения ключа будет использоваться URL-адрес, а не числовой первичный ключ.
+

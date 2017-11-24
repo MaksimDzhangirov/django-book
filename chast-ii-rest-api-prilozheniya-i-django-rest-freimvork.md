@@ -390,5 +390,41 @@ ViewSetы определяются в DRF следующим образом:
 
 ### 8-4. Создаём ViewSet для нашей модели User
 
+Теперь, когда мы закончили рассмотрение такого понятия как представление, пора создать ViewSet для нашей модели User. Мы создадим `UserViewSet` наследуясь от класса `ModelViewSet`.
+
+[Из документации](http://www.django-rest-framework.org/api-guide/viewsets/#modelviewset) видно, что в классе `ModelViewSet`  описаны следующие методы: `.list()`, `.retrieve()`, `.create()`, 
+
+`.update()`,` .partial_update()` и `.destroy()`. Таким образом, реализовывать эти функции самостоятельно нам не нужно! Тем не менее, нам нужно переопределить некоторые атрибуты, наследуемые от `GenericAPIView`, то есть задать значения для `queryset и serializer_class.` [Остальные атрибуты можно увидеть здесь](http://www.django-rest-framework.org/api-guide/generic-views/#genericapiview).
+
+Откройте `project/api/views.py` и внесите следующие изменения:
+
+```
+from django.contrib.auth.models import User
+from rest_framework import viewsets
+from project.api.serializers import UserSerializer
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    Конечная точка API, позволяющая просматривать или редактировать пользователей.
+    """
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+```
+
+В приведенном выше фрагменте кода мы:
+
+* импортировали модель `User`, библиотеку `viewsets` и наш новый `UserSerializer`
+* создали представление `UserViewSet`, которое наследуется от `ModelViewSet`
+* переопределили атрибуты `queryset` и `serializer_class` класса `ModelViewSet`
+
+Существует множество других атрибутов и функций, которые мы можем переопределить в `ModelViewSet`, однако `queryset` и `serializer_class` нужно изменить обязательно, чтобы они соответствовали модели `User`:
+
+* `queryset` - это запрос к базе данных, который вернет все объекты для метода .list\(\)
+
+* `serializer_class` - это класс-сериализатор, который используется для функций.
+
+### 9. URL-адреса и DRF маршрутизаторы
+
+
+
 
 
